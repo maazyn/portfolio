@@ -125,20 +125,31 @@
 
 <body class="bg-noise-pattern font-sans text-gray-200">
   <!-- ***** Header ***** -->
-  <header class="sticky top-0 w-full" id="top">
-    <div class="fixed w-full">
-      <div class="bg-noise-pattern/50 absolute top-0 left-0 flex h-16 w-full items-center justify-between bg-black-600 opacity-100 backdrop-blur-md transition-all ">
-        <div class="absolute left-[50%] hidden translate-x-[-50%] sm:flex">
-          <nav class="flex space-x-0 sm:space-x-2">
-            <a class="hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all text-foreground/60" href="#about">about</a>
-            <a class="hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all text-foreground/60" href="#projects">projects</a>
-            <a class="hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all text-foreground/60" href="#resume">resume</a>
-            <a class="hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all text-foreground/60" href="#contact">contact</a>
-          </nav>
-        </div>
+  <header class="sticky top-0 w-full bg-noise-pattern/50 backdrop-blur-md z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <!-- Center the Mobile Menu Button -->
+      <div class="block sm:hidden mx-auto">
+        <button class="text-white" id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
 
+      <!-- Center the Desktop Menu -->
+      <nav class="hidden sm:flex space-x-4 mx-auto " id="menu">
+        <a class="hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all text-foreground/60 hover:text-blue-300" href="#about">about</a>
+        <a class="hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all text-foreground/60 hover:text-[#f8c6db]" href="#projects">projects</a>
+        <a class="hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all text-foreground/60 hover:text-[#96e4cf]" href="#resume">resume</a>
+        <a class="hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all text-foreground/60 hover:text-[#decca3]" href="#contact">contact</a>
+      </nav>
     </div>
+
+    <!-- Mobile Dropdown Menu (hidden by default) -->
+    <nav id="mobile-menu" class="hidden flex-col space-y-2 mt-4 sm:hidden text-center bg-noise-pattern/50 backdrop-blur-md z-50">
+      <a href="#about" class="block px-4 py-2 hover:text-blue-300"">about</a>
+      <a href="#projects" class="block px-4 py-2 hover:text-[#f8c6db]">projects</a>
+      <a href="#resume" class="block px-4 py-2 hover:text-[#96e4cf]">resume</a>
+      <a href="#contact" class="block px-4 py-2 hover:text-[#decca3]">contact</a>
+    </nav>
   </header>
 
 
@@ -190,8 +201,8 @@
 
 
     <!-- ***** About ***** -->
-    <section class="py-28 h-screen" id="about">
-      <div class="container mx-auto px-4 max-w-[90%] py-16">
+    <section class="py-16 min-h-[calc(100vh-160px)]" id="about">
+      <div class="container mx-auto px-4 max-w-[80%] py-16">
         <!-- <h2 class="text-3xl font-semibold text-gray-200 text-center mb-20">About Me</h2> -->
         <div class="flex flex-col md:flex-row items-center mt-8 gap-2 p-5  rounded-3xl">
           <div class="md:w-1/2 text-center ">
@@ -225,16 +236,15 @@
             </div>
           </div>
           <div class="md:w-1/2 mt-8 md:mt-0">
-            <img class="rounded-3xl m-7 box-border w-auto h-auto mx-auto max-h-[400px]" src="images/maazin-sherif.jpg" alt="Profile picture" />
+            <img class="rounded-3xl m-7 box-border w-auto h-auto mx-auto max-w-[350px]" src="images/maazin-sherif.jpg" alt="Profile picture" />
           </div>
         </div>
-
       </div>
 
-      <div class="relative w-full mt-8 z-[-1]">
+      <div class="relative w-full mb-10">
         <img class="w-full opacity-15 h-40 bg-cover object-cover" src="images/world-map.jpg" alt="Map illustration" />
 
-        <div class="absolute inset-0 grid grid-cols-3 gap-4 items-center justify-around px-10 mx-10 text-white text-center font-bold tracking-widest">
+        <div class="absolute inset-0 grid grid-cols-3 gap-4 items-center justify-around px-10 mx-10   text-white text-center font-bold tracking-widest">
           <div class="flex flex-col items-center">
             <i class="fas fa-home text-3xl mb-2"></i> <!-- Home Icon -->
             <p>US, Ethiopia &<br>Saudi Arabia</p>
@@ -253,9 +263,9 @@
 
 
     <!-- ***** Projects ***** -->
-    <section class="py-16 .min-h-\[calc\(100vh-160px\)\]" id="projects">
+    <section class="py-16 min-h-[calc(100vh-160px)]" id="projects">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-semibold text-gray-200 text-center">Projects</h2>
+        <h2 class="text-3xl font-semibold text-gray-200 text-center pb-2">Projects</h2>
         <div class="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-10 mt-8">
 
 
@@ -334,7 +344,7 @@
     </section>
 
     <!-- ***** Resume ***** -->
-    <section class=".min-h-\[calc\(100vh-160px\)\] py-16" id="resume">
+    <section class="min-h-[calc(100vh-160px)]" id="resume">
       <h2 class="text-3xl font-semibold text-gray-200 text-center">Education & Experience</h2>
 
       <div class="bg-gray-50 bg-opacity-10 shadow-lg rounded-2xl mt-10 p-10 text-gray-200 container mx-auto px-4 max-w-[50%] flex justify-around">
@@ -359,9 +369,9 @@
         </div>
       </div>
       <div class="grid grid-cols-3 items-center justify-around p-6 mx-32 my-24 box-border" >
-        <img src="images/Clark_University_seal.png" class="max-h-32 w-auto mx-auto" alt="CU logo" />
-        <img src="images/StJudeGlobal-png.png" class="w-auto max-h-14 mx-auto rounded-lg" alt="SJG Logo" />
-        <img src="images/PIDS.png" class="w-auto max-h-14 mx-auto rounded-lg" alt="PIDS logo" />
+        <img src="images/Clark_University_seal.png" class="max-h-28 w-auto mx-auto" alt="CU logo" />
+        <img src="images/StJudeGlobal-png.png" class="w-auto max-h-16 mx-auto rounded-lg" alt="SJG Logo" />
+        <img src="images/PIDS.png" class="w-auto max-h-16 mx-auto rounded-lg" alt="PIDS logo" />
       </div>
     </section>
 
