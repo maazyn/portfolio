@@ -13,6 +13,7 @@
   <meta name="description" content="Hi I'm Maazin, a Multidisciplinary SWE.">
   <meta name="keywords" content="Maazin Sherif, OOP, Agile, Project management, Data analysis, Python, Backend development, frontend development" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
@@ -86,29 +87,36 @@
         d: path('M0 100 Q 50 20, 100 100 T 200 100 Q 300 200, 400 100 T 500 100');
       } */
     }
-
-  /*
-    .animated-gradient {
-      background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
-      background-size: 300% 300%;
-      animation: gradientShift 6s ease infinite;
+    img {
+      max-width: 100%;
+      height: auto;
     }
-    @keyframes gradientShift {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
+
+    /* Responsive text scaling */
+    h1 {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
       }
     }
 
-    .animated-path {
-      animation: rotate 10s linear infinite;
+    @media (min-width: 1024px) {
+      h1 {
+        font-size: 4rem;
+      }
     }
-    */
+    @media (max-height: 600px) {
+      #about {
+        height: auto;
+        padding-bottom: 10rem; /* Adjust as needed */
+      }
+      #projects {
+        padding-top: 4rem; /* Prevent overlap */
+      }
+    }
 
   </style>
 
@@ -182,17 +190,18 @@
 
 
     <!-- ***** About ***** -->
-    <section class="py-16 h-screen" id="about">
-      <div class="container mx-auto px-4 max-w-[70%]">
-        <h2 class="text-3xl font-semibold text-gray-200 text-center mb-20">About Me</h2>
-        <div class="flex flex-col md:flex-row items-center mt-8 gap-2 p-5 bg-gray-50 bg-opacity-10 rounded-3xl">
-          <div class="md:w-1/2 text-end ">
+    <section class="py-28 h-screen" id="about">
+      <div class="container mx-auto px-4 max-w-[90%] py-16">
+        <!-- <h2 class="text-3xl font-semibold text-gray-200 text-center mb-20">About Me</h2> -->
+        <div class="flex flex-col md:flex-row items-center mt-8 gap-2 p-5  rounded-3xl">
+          <div class="md:w-1/2 text-center ">
+            <h2 class="font-display mt-4 text-2xl text-center font-bold md:text-3xl">I'm a passionate full-stack developer working from Worcester, MA.</h2><br>
             <p class="text-gray-300">
-              From ideas about the world to ideas about people, I find the new and unfamiliar appealing. If I'm not coding, you can find me being a film snob, and learning a cooking technique! Otherwise I'm probably out star-gazing, or day-dreaming.
+              From ideas about the world to ideas about people, I find the new and unfamiliar appealing. If I'm not coding, you can find me being a film snob, or learning a cooking technique! Otherwise I'm probably out star-gazing, or day-dreaming.
             </p>
 
             <div class="container mx-auto flex justify-end w-full items-center">
-              <ul class="flex space-x-4 w-full items-center justify-end mt-4">
+              <ul class="flex space-x-4 w-full items-center justify-center mt-5">
                 <!-- Update the links to point to your accounts -->
                 <li>
                   <a href="https://instagram.com/maazyn/" title="Link to Instagram Profile" class="hover:text-pink-500">
@@ -214,12 +223,29 @@
                 </li>
               </ul>
             </div>
-
-            <h2 class="text-3xl text-blue-300 text-end font-extralight pt-10 mt-5 tracking-widest">Life doesn't come with a map or destinations</h2>
           </div>
-
           <div class="md:w-1/2 mt-8 md:mt-0">
             <img class="rounded-3xl m-7 box-border w-auto h-auto mx-auto max-h-[400px]" src="images/maazin-sherif.jpg" alt="Profile picture" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="relative w-full mt-8 z-[-1]">
+        <img class="w-full opacity-15 h-40 bg-cover object-cover" src="images/world-map.jpg" alt="Map illustration" />
+
+        <div class="absolute inset-0 grid grid-cols-3 gap-4 items-center justify-around px-10 mx-10 text-white text-center font-bold tracking-widest">
+          <div class="flex flex-col items-center">
+            <i class="fas fa-home text-3xl mb-2"></i> <!-- Home Icon -->
+            <p>US, Ethiopia &<br>Saudi Arabia</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-passport text-3xl mb-2"></i> <!-- Passport Icon -->
+            <p>American Citizen</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-language text-3xl mb-2"></i> <!-- Languages Icon -->
+            <p>Tri-lingual</p>
           </div>
         </div>
       </div>
@@ -227,14 +253,14 @@
 
 
     <!-- ***** Projects ***** -->
-    <section class="py-16 h-screen" id="projects">
+    <section class="py-16 .min-h-\[calc\(100vh-160px\)\]" id="projects">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-semibold text-gray-200 text-center">Projects</h2>
         <div class="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-10 mt-8">
 
 
           <!-- Project 1 -->
-          <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-gray-200">
+          <div class="bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
             <div class="mb-4">
               <h3 class="text-2xl font-semibold text-gray-200">CIRCA</h3>
               <p class="mt-2 text-gray-400">An original travel journal application.</p>
@@ -257,7 +283,7 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-gray-200">
+          <div class="bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
             <div class="mb-4">
               <h3 class="text-2xl font-semibold text-gray-200">MUSIC CAMP</h3>
               <p class="mt-2 text-gray-400">Music e-commerce site.</p>
@@ -281,7 +307,7 @@
           </div>
 
           <!-- Project 3 -->
-          <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-gray-200">
+          <div class="bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
             <div class="mb-4">
               <h3 class="text-2xl font-semibold text-gray-200">RENT-A-PAD</h3>
               <p class="mt-2 text-gray-400">A rental marketplace.</p>
@@ -308,15 +334,15 @@
     </section>
 
     <!-- ***** Resume ***** -->
-    <section class="py-16" id="resume">
+    <section class=".min-h-\[calc\(100vh-160px\)\] py-16" id="resume">
       <h2 class="text-3xl font-semibold text-gray-200 text-center">Education & Experience</h2>
 
-      <div class="bg-gray-500 shadow-lg rounded-2xl mt-10 p-10 text-gray-200 container mx-auto px-4 max-w-[40%] flex justify-around bg-opacity-60">
+      <div class="bg-gray-50 bg-opacity-10 shadow-lg rounded-2xl mt-10 p-10 text-gray-200 container mx-auto px-4 max-w-[50%] flex justify-around">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center p-5">
           <!-- Left: Text Content -->
           <div class="text-left">
             <h3 class="text-2xl font-semibold text-gray-200">RESUME</h3>
-            <p class="mt-2 text-gray-400">Download or view my resume.</p>
+            <p class="mt-2 text-gray-400">Uploaded 09/30/2024</p>
 
             <!-- Link to download or view the resume -->
             <div class="mt-4">
@@ -332,28 +358,36 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-3 items-center justify-around p-6 m-20 " >
-        <img src="images/StJudeGlobal-png.png" class="w-auto h-20 mx-auto rounded-lg" alt="SJG Logo" />
-        <img src="images/Clark_University_seal.png" class="h-40 w-auto mx-auto" alt="CU logo" />
-        <img src="images/PIDS.png" class="w-auto h-20 mx-auto rounded-lg" alt="PIDS logo" />
+      <div class="grid grid-cols-3 items-center justify-around p-6 mx-32 my-24 box-border" >
+        <img src="images/Clark_University_seal.png" class="max-h-32 w-auto mx-auto" alt="CU logo" />
+        <img src="images/StJudeGlobal-png.png" class="w-auto max-h-14 mx-auto rounded-lg" alt="SJG Logo" />
+        <img src="images/PIDS.png" class="w-auto max-h-14 mx-auto rounded-lg" alt="PIDS logo" />
       </div>
     </section>
 
 
 
     <!-- ***** Contact ***** -->
-    <section class="py-16 bg-gray-800  bg-opacity-70" id="contact">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-semibold text-gray-200 text-center ">Get in Touch</h2>
-        <form class="mt-8">
-          <div class="flex gap-5 flex-col md:flex-row">
-            <input type="text" placeholder="Your Name" class="flex-1 p-3 rounded-md md:mb-0 " />
-            <input type="email" placeholder="Your Email" class="flex-1 p-3 rounded-md md:mb-0" />
+    <section class="bg-gray-400 bg-opacity-10 py-4" id="contact">
+      <div class="flex min-h-[calc(100vh-160px)] items-center justify-center ">
+        <div class="container max-w-xl text-center ">
+          <h2 class="font-display mb-4 text-4xl ">Get in touch</h2>
+          <p class="mb-4">Shoot me an email or find me on most platforms @ <span class="text-white"> maazyn</span>.</p>
+          <div class="mb-4 flex items-center justify-center space-x-2 font-semibold"><p>sherifmaazin@gmail.com</p>
+            <button class="inline-flex text-center items-center justify-center rounded-lg min-h-[0px] text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-10 min-w-0 hover:bg-accent/50 text-accent-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+              </svg>
+            </button>
+            <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events:none">
+              <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-2 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+            </div>
           </div>
-          <textarea placeholder="Your Message" class="w-full p-3 rounded-md mt-4 mb-4"></textarea>
-          <button type="submit" class="bg-pink-600  text-white py-2 px-4 rounded hover:bg-pink-500">Send</button>
-        </form>
+          <a class="bg-noise-pattern bg-[#793537] bg-opacity-50 inline-flex text-center items-center justify-center rounded-lg min-w-[100px] text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 shadow-sm hover:shadow transition-all px-8 py-3 min-h-[50px] bg-primary text-primary-foreground hover:bg-primary/80" href="mailto:sherifmaazin@gmail.com">
+            Say hello
+          </a>
+        </div>
       </div>
+
     </section>
 
   </main>
@@ -361,13 +395,12 @@
 
   <!-- ***** Footer ***** -->
 
-  <footer role="contentinfo" class=" text-gray-400 py-4 ">
+  <footer role="contentinfo" class=" text-gray-400 py-6 mx-16">
     <div class="container mx-auto flex justify-between items-center">
-      <p class="text-sm">&copy; 2024 Maazin Sherif. All rights reserved.</p>
-      <ul class="flex space-x-4">
-        <!-- Update the links to point to your accounts -->
+      <p class="text-sm text-[#e5e5e6]">&copy; 2024 Maazin Sherif. All rights reserved.</p>
+      <ul class="flex space-x-4 items-center gap-1">
         <li>
-          <a href="https://instagram.com/maazyn/" title="Link to Instagram Profile" class="hover:text-pink-500">
+          <a href="https://instagram.com/maazyn/" title="Link to Instagram Profile" class="hover:text-pink-500 ">
             <img src="images/instagram.svg" class="w-6 h-6" alt="Instagram">
           </a>
         </li>
