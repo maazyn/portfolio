@@ -913,6 +913,18 @@ video {
   max-height: 7rem;
 }
 
+.max-h-\[20\%\] {
+  max-height: 20%;
+}
+
+.max-h-36 {
+  max-height: 9rem;
+}
+
+.max-h-24 {
+  max-height: 6rem;
+}
+
 .min-h-\[50px\] {
   min-height: 50px;
 }
@@ -1112,6 +1124,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-10 {
@@ -1944,12 +1960,74 @@ video {
     top: auto;
   }
 
+  .sm\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .sm\:flex {
     display: flex;
   }
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:max-h-\[\] {
+    max-height: ;
+  }
+
+  .sm\:max-h-\[30\%\] {
+    max-height: 30%;
+  }
+
+  .sm\:max-h-\[20\%\] {
+    max-height: 20%;
+  }
+
+  .sm\:max-h-\[20px\] {
+    max-height: 20px;
+  }
+
+  .sm\:max-h-\[200px\] {
+    max-height: 200px;
+  }
+
+  .sm\:max-h-\[2px\] {
+    max-height: 2px;
+  }
+
+  .sm\:max-h-\[px\] {
+    max-height: px;
+  }
+
+  .sm\:max-h-\[80px\] {
+    max-height: 80px;
+  }
+
+  .sm\:max-h-\[0\%\] {
+    max-height: 0%;
+  }
+
+  .sm\:max-h-28 {
+    max-height: 7rem;
+  }
+
+  .sm\:max-h-1 {
+    max-height: 0.25rem;
+  }
+
+  .sm\:max-h-16 {
+    max-height: 4rem;
+  }
+
+  .sm\:max-h-24 {
+    max-height: 6rem;
   }
 
   .sm\:max-w-\[60\%\] {
@@ -2020,6 +2098,14 @@ video {
     margin-top: 0px;
   }
 
+  .md\:max-h-\[20\%\] {
+    max-height: 20%;
+  }
+
+  .md\:max-h-28 {
+    max-height: 7rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2064,6 +2150,14 @@ video {
     max-width: 40%;
   }
 
+  .md\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .md\:max-w-\[50\] {
+    max-width: 50;
+  }
+
   .md\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
@@ -2091,9 +2185,53 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  @media (min-width: 1024px) {
+    .md\:lg\:max-h-32 {
+      max-height: 8rem;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-32 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lg\:max-h-28 {
+    max-height: 7rem;
+  }
+
+  .lg\:max-h-3 {
+    max-height: 0.75rem;
+  }
+
+  .lg\:max-h-32 {
+    max-height: 8rem;
+  }
+
+  .lg\:max-h-36 {
+    max-height: 9rem;
+  }
+
+  .lg\:max-h-2 {
+    max-height: 0.5rem;
+  }
+
+  .lg\:max-h-24 {
+    max-height: 6rem;
+  }
+
+  .lg\:max-h-20 {
+    max-height: 5rem;
+  }
+
   .lg\:max-w-\[50\%\] {
     max-width: 50%;
   }
