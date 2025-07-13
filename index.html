@@ -171,7 +171,7 @@
 
       <div class="pb-16">
         <h1 class=" mb-2 text-center font-[heebo] font-light text-3xl md:text-4xl lg:text-5xl z-1 tracking-widest ">Hi there, I'm <br> <span class=" tracking-tighter font-bold  ">Maazin Sherif,</span><br>a full-stack developer.</h1>
-        <h2 class="mb-8 pt-1 tracking-wide text-black text-center text-lg md:text-xl">Intuitive. Multidisciplinary. Explorer.</h2>
+        <h2 class="mb-8 pt-1 tracking-widest text-black/50 text-center text-lg md:text-xl">Intuitive. Multidisciplinary. Explorer.</h2>
         <div class="flex justify-center space-x-2 sm:space-x-4">
           <!-- <a class="inline-flex text-center items-center justify-center rounded-lg min-w-[100px] text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 shadow-sm hover:shadow transition-all px-8 py-3 min-h-[50px] bg-primary text-primary-foreground hover:bg-primary/80" href="/blog">
             Read the blog
@@ -208,9 +208,14 @@
         <!-- <h2 class="text-3xl font-semibold text-gray-200 text-center mb-20">About Me</h2> -->
         <div class="flex flex-col md:flex-row items-center mt-8 gap-2 p-5  rounded-3xl">
           <div class="md:w-1/2 text-center ">
-            <h2 class="font-display mt-4 text-2xl text-center font-bold md:text-3xl">I'm a passionate full-stack developer working from Worcester, MA.</h2><br>
-            <p class="text-gray-300">
+            <h2 class="font-display mt-4 text-2xl text-center font-bold md:text-3xl">I'm a full-stack developer building thoughtful digital experiences.</h2><br>
+            <!-- <p class="text-gray-300">
               From ideas about the world to ideas about people, I find the new and unfamiliar appealing. If I'm not coding, you can find me being a film snob, or learning a cooking technique! Otherwise I'm probably out star-gazing, or day-dreaming.
+            </p> -->
+            <p class="text-gray-300">
+              I’m drawn to depth and complexity — systems, stories, and experiences that reward attention. Outside of code, you’ll find me breaking down films, experimenting in the kitchen, traveling, and diving into brand new subjects head first.
+              🍳 🎞️  📷  🔭 💭 🗺️ 🎧
+
             </p>
 
             <div class="container mx-auto flex justify-end w-full items-center">
@@ -249,7 +254,7 @@
         <div class="absolute inset-0 grid grid-cols-2 gap-4 items-center justify-around px-10 mx-10   text-white text-center font-bold tracking-widest">
           <div class="flex flex-col items-center">
             <i class="fas fa-home text-3xl mb-2 "></i> <!-- Home Icon -->
-            <p class="text-xs sm:text-sm md:text-base lg:text-lg">US & Ethiopia</p>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg">US-based</p>
           </div>
           <!-- Passport Icon -->
           <!-- <div class="flex flex-col items-center">
@@ -258,7 +263,7 @@
           </div> -->
           <div class="flex flex-col items-center">
             <i class="fas fa-language text-3xl mb-2"></i> <!-- Languages Icon -->
-            <p class="text-xs sm:text-sm md:text-base lg:text-lg">Tri-lingual</p>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg">Globally fluent</p>
           </div>
         </div>
       </div>
@@ -271,76 +276,113 @@
     <!-- ***** Projects ***** -->
     <section class="py-16 min-h-[calc(100vh-160px)]" id="projects">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-semibold text-gray-200 text-center pb-2">Projects</h2>
-        <div class="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-10 mt-8">
+        <h2 class="text-3xl font-semibold text-gray-200 text-center pb-2">Work</h2>
+        <div class="grid grid-rows-3 md:grid-rows-2 lg:grid-rows-3 gap-10 mt-8">
 
           <!-- Project 1 -->
-          <div class="bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
-            <div class="mb-4">
-              <h3 class="text-2xl font-semibold text-gray-200">CIRCA</h3>
-              <p class="mt-2 text-gray-400">An original travel journal application.</p>
+          <div class="flex lg:flex-row md:flex-col sm:flex-col bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
+            <div class="flex flex-col justify-between p-6 gap-1 w-auto">
+              <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-200">Mbolden Change</h3>
+                <p class="mt-4 text-gray-400">Mbolden Change is a mission-driven nonprofit client project designed to empower grassroots movements through digital storytelling and community giving. Built with Next.js and Sanity CMS, it includes a dynamic donation portal (Stripe & Zeffy), campaign pages, and modular content blocks that allow the team to spotlight initiatives with visual and narrative clarity. The project emphasizes accessibility, clean design, and scalability, reflecting a commitment to technical excellence in service of social impact.</p>
+                <ul class="flex space-x-2 mt-4 text-sm text-gray-200">
+                  <li>NextJs</li>
+                  <li>Sanity CMS</li>
+                  <li>TypeScript</li>
+                  <li>Stripe Api</li>
+                </ul>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <a href="https://mboldenchange.org" target="_blank" class="text-pink-500 hover:text-pink-400">Visit Site &rarr;</a>
+                <a href="https://github.com/maazyn/circa" title="View Source Code" target="_blank">
+                  <!-- <img src="images/github.svg" class="w-6 h-6" alt="GitHub"> -->
+                </a>
+              </div>
             </div>
-            <ul class="flex space-x-2 mb-4 text-sm text-gray-500">
-              <li>Flask</li>
-              <li>SQLAlchemy</li>
-              <li>React</li>
-            </ul>
-            <div class="flex justify-between items-center">
-              <a href="https://circa.onrender.com" target="_blank" class="text-pink-500 hover:text-pink-400">Visit Site &rarr;</a>
-              <a href="https://github.com/maazyn/circa" title="View Source Code" target="_blank">
-                <!-- Right: Thumbnail of the project -->
-                <div class="flex justify-end">
-                  <img src="images/circa.png" class=" hover:border-black w-auto h-auto border rounded-lg mx-auto max-w-[550px] " alt="Project Thumbnail" />
-                </div>
-                <img src="images/github.svg" class="w-6 h-6" alt="GitHub">
-              </a>
+
+            <!-- Right: Thumbnail of the project -->
+            <div class="flex justify-end w-auto">
+              <img src="images/mbolden-change.png" class=" hover:border-black w-auto border rounded-lg mx-auto max-w-[650px] " alt="Project Thumbnail" />
             </div>
           </div>
 
           <!-- Project 2 -->
-          <div class="bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
-            <div class="mb-4">
-              <h3 class="text-2xl font-semibold text-gray-200">MUSIC CAMP</h3>
-              <p class="mt-2 text-gray-400">Music e-commerce site.</p>
+          <div class="flex lg:flex-row md:flex-col sm:flex-col bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200 gap-2">
+            <div class="flex flex-col justify-between p-6">
+              <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-200">CIRCA</h3>
+                <p class="mt-4 text-gray-400">Circa is a quirky travel journaling app designed for the global nomad. It allows users to search, visualize, and log destinations, with relevant details like weather, and personal notes. Built with Flask and React, Circa integrates external APIs to enhance the travel logging experience, making it easy to revisit and reflect on past journeys.
+                </p>
+                <ul class="flex space-x-2 mt-4 text-sm text-gray-200">
+                  <li>Flask</li>
+                  <li>SQLAlchemy</li>
+                  <li>React</li>
+                </ul>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <a href="https://circa.onrender.com" target="_blank" class="text-pink-500 hover:text-pink-400">Visit Site &rarr;</a>
+                <a href="https://github.com/maazyn/circa" title="View Source Code" target="_blank">
+                  <!-- <img src="images/github.svg" class="w-6 h-6" alt="GitHub"> -->
+                </a>
+              </div>
             </div>
-            <ul class="flex space-x-2 mb-4 text-sm text-gray-500">
-              <li>Flask</li>
-              <li>SQLAlchemy</li>
-              <li>Node.js</li>
-              <li>React</li>
-            </ul>
-            <div class="flex justify-between items-center">
-              <a href="https://music-camp-t63l.onrender.com" class="text-pink-500 hover:text-pink-400">Visit Site &rarr;</a>
-              <a href="https://github.com/iigonzoii/music_camp" title="View Source Code" target="_blank">
-                <!-- Right: Thumbnail of the project -->
-                <div class="flex justify-end">
-                  <img src="images/musiccamp.png" class=" hover:border-black w-auto h-auto border rounded-lg mx-auto max-w-[550px]" alt="Project Thumbnail" />
-                </div>
-                <img src="images/github.svg" class="w-6 h-6" title="View Source Code" alt="GitHub">
-              </a>
+
+            <!-- Right: Thumbnail of the project -->
+            <div class="flex justify-end">
+              <img src="images/circa.png" class=" hover:border-black w-auto h-auto border rounded-lg mx-auto max-w-[650px] " alt="Project Thumbnail" />
             </div>
           </div>
 
           <!-- Project 3 -->
-          <div class="bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
-            <div class="mb-4">
-              <h3 class="text-2xl font-semibold text-gray-200">RENT-A-PAD</h3>
-              <p class="mt-2 text-gray-400">A rental marketplace.</p>
+          <div class="flex lg:flex-row md:flex-col sm:flex-col bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
+            <div class="flex flex-col justify-between p-6">
+              <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-200">MUSIC CAMP</h3>
+                <p class="mt-4 text-gray-400">Music Camp is a Bandcamp-inspired e-commerce platform for indie artists and fans. Users can upload albums, buy tracks, and explore curated profiles in a responsive, React-based interface. MusicCamp was built to simulate the core dynamics of digital music platforms with a focus on artist-driven content and community interaction.
+                </p>
+                <ul class="flex space-x-2 mt-4 text-sm text-gray-200">
+                  <li>Flask</li>
+                  <li>SQLAlchemy</li>
+                  <li>Node.js</li>
+                  <li>React</li>
+                </ul>
+              </div>
+              <div class="flex justify-between items-center">
+                <a href="https://music-camp-t63l.onrender.com" class="text-pink-500 hover:text-pink-400">Visit Site &rarr;</a>
+                <a href="https://github.com/iigonzoii/music_camp" title="View Source Code" target="_blank">
+                  <!-- <img src="images/github.svg" class="w-6 h-6" title="View Source Code" alt="GitHub"> -->
+                </a>
+              </div>
             </div>
-            <ul class="flex space-x-2 mb-4 text-sm text-gray-500">
-              <li>JavaScript</li>
-              <li>Sequelize</li>
-              <li>Express</li>
-            </ul>
-            <div class="flex justify-between items-center">
-              <a href="https://rent-a-pad.onrender.com" class="text-pink-500 hover:text-pink-400">Visit Site &rarr;</a>
-              <a href="https://github.com/maazyn/Rent-a-pad" title="View Source Code" target="_blank">
-                <!-- Right: Thumbnail of the project -->
-                <div class="flex justify-end">
-                  <img src="images/rentapad.png" class=" hover:border-black w-auto h-auto border rounded-lg mx-auto max-w-[550px]" alt="Project Thumbnail" />
-                </div>
-                <img src="images/github.svg" class="w-6 h-6" title="View Source Code" alt="GitHub">
-              </a>
+            <!-- Right: Thumbnail of the project -->
+            <div class="flex justify-end height-full width-full">
+              <img src="images/musiccamp.png" class=" hover:border-black w-auto h-auto border rounded-lg mx-auto max-w-[650px]" alt="Project Thumbnail" />
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="flex lg:flex-row md:flex-col sm:flex-col bg-gray-50 bg-opacity-10 shadow-lg rounded-lg p-6 text-gray-200">
+            <div class="flex flex-col justify-between p-6">
+              <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-200">RENT-A-PAD</h3>
+                <p class="mt-4 text-gray-400">Rent-a-Pad is a full-stack Airbnb clone built from the ground up using Flask, SQLAlchemy, and React. It includes core booking features such as listings, reviews, and reservations, with custom backend validations and dynamic frontend interactions. It showcases the ability to replicate complex platform logic while applying best practices in both frontend architecture and RESTful API design.
+                </p>
+                <ul class="flex space-x-2 mt-4 text-sm text-gray-200">
+                  <li>JavaScript</li>
+                  <li>Sequelize</li>
+                  <li>Express</li>
+                </ul>
+              </div>
+              <div class="flex justify-between items-center">
+                <a href="https://rent-a-pad.onrender.com" class="text-pink-500 hover:text-pink-400">Visit Site &rarr;</a>
+                <a href="https://github.com/maazyn/Rent-a-pad" title="View Source Code" target="_blank">
+                  <!-- <img src="images/github.svg" class="w-6 h-6" title="View Source Code" alt="GitHub"> -->
+                </a>
+              </div>
+            </div>
+            <!-- Right: Thumbnail of the project -->
+            <div class="flex justify-end width-full">
+              <img src="images/rentapad.png" class=" hover:border-black w-auto h-auto border rounded-lg mx-auto max-w-[650px]" alt="Project Thumbnail" />
             </div>
           </div>
 
@@ -360,7 +402,7 @@
           <!-- Left: Text Content -->
           <div class="text-left">
             <h3 class="text-2xl font-semibold text-gray-200">RESUME</h3>
-            <p class="mt-2 text-gray-400">Uploaded 03/2025</p>
+            <p class="mt-2 text-gray-400">Uploaded 07/2025</p>
 
             <!-- Link to download or view the resume -->
             <div class="mt-4">
@@ -369,19 +411,19 @@
           </div>
 
           <!-- Right: Thumbnail of the resume -->
-          <!-- <div class="flex justify-end">
+          <div class="flex justify-end">
             <a href="assets/Resume_MaazinSherif_a.pdf" target="_blank" >
-              <img src="images/resume_thumbnail0325.png" class=" hover:border-black w-auto h-auto border rounded-lg " alt="Resume Thumbnail" />
+              <img src="images/resume_thumbnail071225.png" class=" hover:border-black w-auto h-auto border rounded-lg " alt="Resume Thumbnail" />
             </a>
-          </div> -->
-          
+          </div>
+
         </div>
       </div>
-      <div class="flex flex-row items-center justify-items-center p-6 max-w-[90%] lg:max-w-[50%] md:max-w-[70%] sm:mx-auto lg:mx-auto my-24 mx-auto box-border gap-2" >
+      <!-- <div class="flex flex-row items-center justify-items-center p-6 max-w-[90%] lg:max-w-[50%] md:max-w-[70%] sm:mx-auto lg:mx-auto my-24 mx-auto box-border gap-2" >
         <img src="images/Clark_University_seal.png" class="max-h-24 md:max-h-28 lg:max-h-32 w-auto mx-auto" alt="CU logo" />
         <img src="images/StJudeGlobal-png.png" class="w-auto max-h-16 mx-auto rounded-lg" alt="SJG Logo" />
         <img src="images/PIDS.png" class="w-auto max-h-16 mx-auto rounded-lg" alt="PIDS logo" />
-      </div>
+      </div> -->
     </section>
 
 
